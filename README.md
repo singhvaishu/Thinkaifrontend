@@ -2,6 +2,62 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+# Personal Blog Platform
+
+## Overview
+
+This is a personal blog platform where users can sign up, log in, and post articles. The platform allows users to view all posts, filter them by author, and manage their own content. It features a Node.js/Express backend and a Next.js 14 with TypeScript frontend.
+
+## Features
+
+### Backend (Node.js/Express)
+
+1. **API Endpoints**:
+
+   - `POST /signup`: Registers a new user with email and password.
+   - `POST /login`: Authenticates a user and returns a session token.
+   - `POST /post`: Allows authenticated users to post a new article.
+   - `GET /posts`: Retrieves all posts.
+   - `GET /posts?author=userId`: Retrieves posts by a specific author.
+
+2. **Data Models**:
+
+   - **User**: `id`, `email`, `passwordHash`
+   - **Post**: `id`, `title`, `content`, `authorId`, `createdAt`
+
+3. Authentication:
+   - JWT-based authentication for secure user sessions.
+   - Secure password storage using hashed passwords (e.g., bcrypt).
+
+### Frontend (Next.js 14/TypeScript)
+
+1. Pages:
+
+   - `/`: Homepage listing all blog posts (Server-Side Rendering).
+   - `/login`: Login page for user authentication.
+   - `/signup`: Sign-up page for user registration.
+   - `/dashboard`: Private route for logged-in users to post articles and view their posts.
+
+2. Features:
+   - Client-side routing with protected routes.
+   - Responsive and clean UI design using CSS Modules or styled-components.
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js >= 16.x
+- NPM >= 8.x
+- MongoDB instance running locally or on the cloud.
+
+### Steps to Run the Application
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd personal-blog-platform
+   ```
+
 First, run the development server:
 
 ```bash
