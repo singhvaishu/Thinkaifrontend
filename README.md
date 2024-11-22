@@ -38,7 +38,7 @@ This is a personal blog platform where users can sign up, log in, and post artic
    ```bash
    git clone https://github.com/singhvaishu/Thinkaifrontend
    
-2.** Install dependencies**;
+2.**Install dependencies**;
       
       npm install
 
