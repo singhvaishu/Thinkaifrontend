@@ -1,33 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
 
 ## Getting Started
 
-# Personal Blog Platform
+# Personal Blog THINKAI
 
 ## Overview
 
 This is a personal blog platform where users can sign up, log in, and post articles. The platform allows users to view all posts, filter them by author, and manage their own content. It features a Node.js/Express backend and a Next.js 14 with TypeScript frontend.
 
-## Features
 
-### Backend (Node.js/Express)
 
-1. **API Endpoints**:
-
-   - `POST /signup`: Registers a new user with email and password.
-   - `POST /login`: Authenticates a user and returns a session token.
-   - `POST /post`: Allows authenticated users to post a new article.
-   - `GET /posts`: Retrieves all posts.
-   - `GET /posts?author=userId`: Retrieves posts by a specific author.
-
-2. **Data Models**:
-
-   - **User**: `id`, `email`, `passwordHash`
-   - **Post**: `id`, `title`, `content`, `authorId`, `createdAt`
-
-3. Authentication:
-   - JWT-based authentication for secure user sessions.
-   - Secure password storage using hashed passwords (e.g., bcrypt).
 
 ### Frontend (Next.js 14/TypeScript)
 
@@ -54,9 +36,11 @@ This is a personal blog platform where users can sign up, log in, and post artic
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd personal-blog-platform
-   ```
+   git clone https://github.com/singhvaishu/Thinkaifrontend
+   
+2.** Install dependencies**;
+      
+      npm install
 
 First, run the development server:
 
