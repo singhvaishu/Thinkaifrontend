@@ -23,6 +23,7 @@ This is a personal blog platform where users can sign up, log in, and post artic
 2. Features:
    - Client-side routing with protected routes.
    - Responsive and clean UI design using CSS Modules or styled-components.
+   - search  bar filter 
 
 ## Setup Instructions
 
