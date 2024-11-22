@@ -46,7 +46,8 @@ First, run the development server:
 
 3. **Environment Variables: Create a .env.local file in the frontend folder with the following variables**:
 
-NEXT_PUBLIC_API_URL=http://localhost:5000  # API URL of the backend
+NEXT_PUBLIC_API_URL=http://localhost:5000 
+( API URL of the backend)
 
 ```bash
 npm run dev
