@@ -28,7 +28,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post("https://blogbackend-sigma.vercel.app/signup", { email, password, confirmPassword });
+      const response = await axios.post("http://localhost:5000/signup", { email, password, confirmPassword });
 
       // If signup is successful, redirect to login page
       if (response.data.message === "User registered successfully") {
